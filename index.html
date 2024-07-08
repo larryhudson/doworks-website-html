@@ -1,0 +1,131 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>DO WORKS</title>
+
+    <style>
+      /* Fonts */
+      @font-face {
+        font-family: "Neue Haas Grotesk";
+        src: url("fonts/NeueHaasGroteskText-Regular.woff") format("woff");
+        font-style: normal;
+        font-weight: normal;
+        font-display: block;
+        unicode-range: U+0-DFFF, U+F900-FFFD;
+      }
+
+      @font-face {
+        font-family: "Nitti Grotesk";
+        src: url("fonts/NittiGrotesk-Light.woff") format("woff");
+        font-style: normal;
+        font-weight: 200;
+        font-display: block;
+        unicode-range: U+0-DFFF, U+F900-FFFD;
+      }
+
+      @font-face {
+        font-family: "Nitti Grotesk";
+        src: url("fonts/NittiGrotesk-LightItalic.woff") format("woff");
+        font-style: italic;
+        font-weight: 200;
+        font-display: block;
+        unicode-range: U+0-DFFF, U+F900-FFFD;
+      }
+
+      @font-face {
+        font-family: "Nitti Grotesk";
+        src: url("fonts/NittiGrotesk-Normal.woff") format("woff");
+        font-style: normal;
+        font-weight: normal;
+        font-display: block;
+        unicode-range: U+0-DFFF, U+F900-FFFD;
+      }
+
+      /* Base styles */
+      html {
+        font-family: "Nitti Grotesk", sans-serif;
+        padding: 2rem;
+        line-height: 2;
+        font-size: 1.5rem;
+      }
+
+      body {
+        max-width: 24rem;
+        margin: 0 auto;
+      }
+
+      h1 {
+        font-size: 3rem;
+        font-weight: normal;
+        padding: 0;
+        margin: 1.5rem 0 0.5rem;
+      }
+
+      p {
+        font-weight: 200;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Hyperlinks */
+      a {
+        color: black;
+        text-decoration: none;
+      }
+
+      a:hover,
+      a:focus {
+        text-decoration: underline;
+      }
+
+      /* Yellow circle */
+      #yellow-circle {
+        background-color: #fbd400;
+        width: 12rem;
+        height: 12rem;
+        border-radius: 50%;
+      }
+
+      /* Scrolling effect */
+      @keyframes marquee {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+
+      .marquee-container {
+        width: max-content;
+        overflow: hidden;
+      }
+
+      .marquee-content {
+        display: inline-block;
+        white-space: nowrap;
+        animation: marquee 5s linear infinite;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .marquee-content {
+          animation: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="yellow-circle"></div>
+
+    <div class="marquee-container">
+      <h1 class="marquee-content">DO WORKS</h1>
+    </div>
+
+    <p>
+      <a href="https://www.instagram.com/__doworks">instagram.com/__doworks</a>
+    </p>
+    <p><a href="mailto:info@doworks.net">info@doworks.net</a></p>
+  </body>
+</html>
